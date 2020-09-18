@@ -1,0 +1,78 @@
+---
+name: computational_linguistics
+channels:
+  - rdkit
+  - bioconda
+  - openbabel
+  - conda-forge
+  - plotly
+  - r
+dependencies:
+  - python
+  - ipython
+  - pipdeptree
+  - nbconvert
+  - ipykernel
+  - pip==19.3.1
+  - pep8
+  - pyflakes
+  - graphviz
+
+  # Jupyter
+  - jupyter
+  - jupyterlab
+
+  # General data manipulation
+  - numpy
+  - pandas
+  ## numexpr sppeds up numerical calculations in pandas by
+  ## distributing them to multiple chores, chunking and caching.
+  - numexpr
+  ## bottleneck is collection of C functions for numpy arrays, so
+  ## it also speeds up pandas.
+  - bottleneck
+
+  # Math
+  - sympy
+
+  # NLP
+  - gensim
+
+  # Visualizaton
+  - matplotlib
+  - plotly #=3.10.0
+  - seaborn
+  - graphviz
+
+
+  # Machine learning
+  - scikit-learn
+
+  # Testing
+  ## Property testing. Panda installation also relies on this
+  - hypothesis
+
+  # CLI tools
+  - pandoc
+  - texlive-core
+
+  # HTML parsing
+  - beautifulsoup4
+
+  # node
+  - nodejs
+  - pip:
+    # Jupyter extensions and kernels
+    # scispacy models
+    - spacy==2.2.4
+    - nltk
+    - ngram
+    # State machine library
+    - pysm
+    - pg_activity
+    - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_core_sci_lg-0.2.4.tar.gz
+    - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_ner_craft_md-0.2.4.tar.gz
+    - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_ner_jnlpba_md-0.2.4.tar.gz
+    - https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.4/en_ner_bc5cdr_md-0.2.4.tar.gz
+    - boto3
+
